@@ -1,0 +1,654 @@
+/* CON ESTO LLAMAMOS A LAS FUENTES LOCALES */
+
+@font-face {
+    font-family: NexaBold;
+    src: url(../fuentes/NexaBold.otf);
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url(../fuentes/NexaLight.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* AQUI INICIA EL BODY */
+
+body {
+    font-family: NexaLight;
+}
+
+#btn_inicio_sesion {
+    text-align: center;
+    float: right;
+    padding: 3% 15%;
+    position: relative;
+}
+
+#btn_inicio_sesion a {
+    width: fit-content;
+    padding: 6px 8px;
+    background-color: #F49622;
+    color: #fff;
+    border: #F49622;
+    border-radius: 0.8ch;
+    font-family: NexaLight;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#btn_inicio_sesion a:hover {
+    background-color: #000;
+    color: #f49622;
+    transition: 0.9s;
+}
+
+#img_comidas {
+    margin-top: -10%;
+}
+
+.header_principal {
+    background-image: url(../IMG/fondo_inicial_completo.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#sct_header_inferior {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: -11%;
+}
+
+#sct_header_inferior img {
+    width: 50%;
+    margin-left: 25%
+}
+
+
+/* RESERVAS */
+
+
+/* RESERVAS HEADER */
+
+.header_reservas h2 {
+    font-family: NexaBold;
+    font-size: 90px;
+    margin-left: 75px;
+}
+
+#sct-reservas-header .header_reservas {
+    background-color: #F49622;
+    padding-top: 100px;
+}
+
+
+/* VARIEDAD EN COMIDAS */
+
+#sct-encuentra_comidas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #000;
+}
+
+.variedad_comidas {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-left: 15px;
+    flex-direction: column;
+}
+
+.variedad_comidas img {
+    width: 800px;
+}
+
+.texto_variedad_comidas {
+    background-color: rgba(0, 0, 0, .85);
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 5%;
+    padding: 30px;
+    text-align: justify;
+    width: 68%;
+    font-size: 33px;
+    font-family: NexaLight;
+}
+
+
+/* ENCUENTRA COMIDAS BOTON */
+
+.boton_encuentra_comidas {
+    padding: 40px 0;
+    padding-bottom: 70px;
+    margin: auto;
+}
+
+.boton_encuentra_comidas a {
+    width: fit-content;
+    padding: 6px 8px;
+    background-color: #F49622;
+    color: #fff;
+    border: #F49622;
+    border-radius: 0.8ch;
+    font-family: NexaLight;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.boton_encuentra_comidas a:hover {
+    background-color: #000;
+    color: #f49622;
+    transition: 0.9s;
+}
+
+.imagen_derecha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #f49622;
+    width: 95%;
+    border: #000 8px solid;
+}
+
+.imagen_derecha img {
+    width: 200px;
+    height: inherit;
+}
+
+
+/* RESERVAS INFO */
+
+#sct-reservas {
+    background-image: url(../IMG/reserva_Fondo.png);
+    background-size: cover;
+}
+
+#sct-reservas-informacion {
+    display: flex;
+}
+
+.reservas_informacion {
+    margin-left: 20%;
+    background-color: rgba(10, 10, 10, .85);
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    padding: 30px 15px;
+}
+
+.reservas_informacion img {
+    width: 200px;
+}
+
+.reserva_mano img {
+    width: 500px;
+}
+
+.reservas_texto {
+    /* text-align: justify; */
+    /* width: 70%; */
+    font-size: 33px;
+    /* margin: 0 15%; */
+    padding-bottom: 50px;
+    font-family: NexaLight;
+    text-align: left;
+}
+
+
+/* CLIENTES + CONECTADOS */
+
+#sct-clientes-conectados {
+    background-image: url(../IMG/fondo_Mas_Clientes.png);
+    background-size: cover;
+    height: 900px;
+}
+
+#sct-clientes-conectados img {
+    width: 800px;
+}
+
+.variedad_galeria_conectados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+
+.clientes_conectados_cuerpo {
+    background-color: rgba(244, 150, 34, .85);
+    margin: 0 50% 5% 10%;
+    width: 44%;
+    font-family: NexaLight;
+    padding: 20px;
+}
+
+.header_clientes_conectados h2 {
+    color: #fff;
+    font-weight: 7px;
+    font-family: NexaBold;
+    font-size: 75px;
+}
+
+.header_clientes_conectados h3 {
+    color: #000;
+    font-family: NexaBold;
+    font-size: 40px;
+}
+
+.clientes_conectados_cuerpo p {
+    color: #fff;
+    font-size: 33px;
+}
+
+.boton_registrar a {
+    text-decoration: none;
+    background-color: #000;
+    margin-left: 18%;
+    padding: 15px 45px;
+    color: #fff;
+    font-size: 25px;
+    font-family: NexaLight;
+}
+
+.boton_registrar a:hover {
+    background-color: #f49622;
+    transition: 0.5s;
+}
+
+
+/* VARIEDAD EN METODOS DE PAGO */
+
+#sct-variedad_en_pagos {
+    background-image: url(../IMG/fondo_Variedad.png);
+    background-size: cover;
+    height: 800px;
+    width: auto;
+}
+
+.header_variedad {
+    background-color: #F49622;
+    height: 75px;
+}
+
+.variedad_galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sct-variedad_en_pagos img {
+    width: 800px;
+}
+
+.texto_informativo {
+    background-color: rgba(0, 0, 0, .85);
+    color: #fff;
+    margin-top: 5%;
+    margin-left: 40%;
+    padding: 30px;
+    text-align: justify;
+    width: 50%;
+    font-size: 33px;
+    font-family: NexaLight;
+}
+
+
+/* RESTAURANTES EN TODO EL PAIS */
+
+#sct-restaurantes {
+    background-image: url(../IMG/fondo_Restaurantes.png);
+    background-size: cover;
+}
+
+.header_restaurantes {
+    background-color: #000;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+.header_restaurantes h2 {
+    font-family: NexaBold;
+    font-size: 90px;
+    margin-left: 75px;
+}
+
+.header_restaurantes h3 {
+    font-family: NexaLight;
+    font-size: 66px;
+    text-align: center;
+}
+
+.restaurantes_mapa {
+    background-color: rgba(244, 150, 34, .85);
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    padding: 30px 15px;
+}
+
+.restaurantes_mapa img {
+    width: 200px;
+}
+
+.restaurantes_texto {
+    text-align: justify;
+    width: 70%;
+    font-size: 33px;
+    margin: 0 15%;
+    padding-bottom: 50px;
+    font-family: NexaLight;
+}
+
+
+/* FOOTER */
+
+footer {
+    color: #fff;
+    background-color: #000;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_landingPage {
+    font-family: NexaLight;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    padding: 30px 0;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.footer_landingPage a:hover,
+.footer_landingPage img:hover {
+    cursor: pointer;
+    opacity: .8;
+    color: #F49622;
+}
+
+.registrar_titulo {
+    font-family: NexaBold;
+    padding-bottom: 20px;
+}
+
+.registrar_div {
+    display: flex;
+    padding: 15px 0;
+}
+
+.registrar_div a {
+    text-align: center;
+    margin: auto 0;
+}
+
+.acercaDe_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.acercaDe_div p {
+    text-align: justify;
+    padding: 12px 0;
+}
+
+.redesSociales_div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer_landingPage img {
+    width: 30px;
+}
+
+.borde_inferior {
+    background-color: #F49622;
+    height: 30px;
+}
+
+
+/* Aquí inicia el responsive */
+
+@media only screen and (min-width: 386px) and (max-width: 1020px) {
+    #btn_inicio_sesion {
+        position: static;
+    }
+    /* RESERVAS */
+    /* RESERVAS HEADER */
+    #sct-reservas-header .header_reservas {
+        display: none;
+    }
+    /* VARIEDAD EN COMIDAS */
+    .variedad_comidas img {
+        width: 350px;
+    }
+    .texto_variedad_comidas {
+        width: 95%;
+    }
+    .variedad_p_1 {
+        display: none;
+    }
+    .imagen_derecha {
+        display: none;
+    }
+    /* RESERVAS INFO */
+    #sct-reservas {
+        height: 65vh;
+        padding-top: 50px;
+    }
+    #sct-reservas-informacion {
+        flex-direction: column;
+    }
+    .reservas_informacion {
+        margin-left: 0%;
+        width: 100%;
+        padding: 50px 15px;
+    }
+    .reservas_informacion img {
+        display: none;
+    }
+    .reserva_mano img {
+        width: 100vw;
+        float: right;
+        position: absolute;
+    }
+    .reservas_texto {
+        width: 100%;
+        font-size: 20px;
+        margin: 0%;
+        transform: translateY(-80px);
+        position: relative;
+    }
+    /* CLIENTES + CONECTADOS */
+    #sct-clientes-conectados {
+        height: fit-content;
+        padding-bottom: 45px;
+    }
+    #sct-clientes-conectados img {
+        width: 350px;
+    }
+    .variedad_galeria_conectados {
+        justify-content: unset;
+        padding-bottom: 30px;
+    }
+    .clientes_conectados_cuerpo {
+        margin: 0%;
+        width: 100%;
+    }
+    .boton_registrar {
+        margin-top: 10%;
+    }
+    /* VARIEDAD EN METODOS DE PAGO */
+    #sct-variedad_en_pagos {
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+    #sct-variedad_en_pagos img {
+        width: 350px;
+    }
+    .texto_informativo {
+        margin-left: 0%;
+        width: 100%;
+    }
+    /* RESTAURANTES EN TODO EL PAIS */
+    .header_restaurantes {
+        display: none;
+    }
+    .restaurantes_mapa {
+        width: 100%;
+    }
+    .restaurantes_texto {
+        width: 90%;
+        font-size: 30px;
+        margin: 0 5%;
+    }
+    .restaurantes_texto :first-child {
+        display: none;
+    }
+    /* FOOTER */
+    .footer_landingPage {
+        display: flex;
+        flex-direction: column;
+    }
+    .responsive_footer {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    .acercaDe_div {
+        display: none;
+    }
+}
+
+
+/* ULTRA PEQUEÑO RESPONSIVE */
+
+@media only screen and (max-width: 386px) {
+    #btn_inicio_sesion {
+        position: static;
+    }
+    #btn_inicio_sesion a {
+        font-size: 10px;
+    }
+    /* RESERVAS */
+    /* RESERVAS HEADER */
+    #sct-reservas-header .header_reservas {
+        display: none;
+    }
+    /* VARIEDAD EN COMIDAS */
+    .variedad_comidas img {
+        width: 250px;
+    }
+    .texto_variedad_comidas {
+        width: 95%;
+    }
+    .variedad_p_1 {
+        display: none;
+    }
+    .imagen_derecha {
+        display: none;
+    }
+    /* RESERVAS INFO */
+    #sct-reservas {
+        height: 65vh;
+        padding-top: 50px;
+    }
+    #sct-reservas-informacion {
+        flex-direction: column;
+    }
+    .reservas_informacion {
+        margin-left: 0%;
+        width: 100%;
+        padding: 50px 15px;
+    }
+    .reservas_informacion img {
+        display: none;
+    }
+    .reserva_mano img {
+        margin-top: 50px;
+        width: 100vw;
+        float: right;
+        position: absolute;
+    }
+    .reservas_texto {
+        width: 100%;
+        font-size: 20px;
+        margin: 0%;
+        transform: translateY(-80px);
+        position: relative;
+    }
+    /* CLIENTES + CONECTADOS */
+    #sct-clientes-conectados {
+        height: fit-content;
+        padding-bottom: 45px;
+    }
+    #sct-clientes-conectados img {
+        width: 250px;
+    }
+    .variedad_galeria_conectados {
+        justify-content: unset;
+        padding-bottom: 30px;
+    }
+    .clientes_conectados_cuerpo {
+        margin: 0%;
+        width: 100%;
+    }
+    .boton_registrar {
+        margin-top: 10%;
+    }
+    /* VARIEDAD EN METODOS DE PAGO */
+    #sct-variedad_en_pagos {
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+    #sct-variedad_en_pagos img {
+        width: 250px;
+    }
+    .texto_informativo {
+        margin-left: 0%;
+        width: 100%;
+    }
+    /* RESTAURANTES EN TODO EL PAIS */
+    .header_restaurantes {
+        display: none;
+    }
+    .restaurantes_mapa {
+        width: 100%;
+    }
+    .restaurantes_texto {
+        width: 90%;
+        font-size: 30px;
+        margin: 0 5%;
+    }
+    .restaurantes_texto :first-child {
+        display: none;
+    }
+    /* FOOTER */
+    .footer_landingPage {
+        display: flex;
+        flex-direction: column;
+    }
+    .responsive_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    .acercaDe_div {
+        display: none;
+    }
+}

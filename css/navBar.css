@@ -1,0 +1,188 @@
+/* CON ESTO LLAMAMOS A LAS FUENTES LOCALES */
+
+@font-face {
+    font-family: NexaBold;
+    src: url(../fuentes/NexaBold.otf);
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url(../fuentes/NexaLight.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+/*ESTOS SON LAS LINEAS QUE DIVIDEN LAS SECCIONES*/
+hr {
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    border: none;
+}
+
+/*FORMATO DEL NAV BAR EN LA PARTE HORIZONTAL DE LA PAGINA*/
+#navbar {
+    background-color: rgb(0, 0, 0);
+    height: 115px;
+    display: flex;
+    align-items: center;
+}
+#Slogan {
+    font-family: NexaBold;
+    font-size: 60px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    align-items: center;
+}
+.slogan_landing{
+    grid-template-columns: 1fr!important;
+}
+.slogan_usuarios h1{
+    margin-left: 27%;
+}
+#Slogan div{
+    display: flex;
+    margin: 0;
+    justify-self: end;
+    padding-right: 15px;
+}
+#Slogan img{
+    width: 90px;
+    height: 90px;
+}
+.slogan_p{
+    font-size: 15px;
+    text-align: right;
+    font-family: NexaLight;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-left: 30px;
+}
+
+/*EL COLOR DEL BOTON DE TRES LINES*/
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: rgb(226, 0, 0);
+}
+
+/*ESTO ES LA CAJA YA POR DENTRO DONDE SE MUESTRAN LAS OPCIONES*/
+
+#nav-menu {
+    background-color: rgb(0, 0, 0);
+    width: 275px;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+
+#nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: start;
+    list-style: 50px;
+    height: 50px;
+    padding: 1rem;
+}
+
+#navbar-toggle img {
+    width: 100%;
+}
+
+
+/*COLOR DE LAS OPCIONES EN MENU*/
+
+.nav-text a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    font-family: NexaLight;
+}
+
+
+/*COLOR DE CUANDO SE PASA EL PUNTERO ENCIMA*/
+
+.nav-text:hover {
+    background-color: #F49622;
+    cursor: pointer;
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+
+/*COLOR DE LOS ICONOS EN EL MENU*/
+
+.nav-icon {
+    padding-right: 1rem;
+    color: rgb(250, 250, 250);
+}
+
+
+/*COLOR DEL LOGO DEL APP*/
+
+#youtube-logo {
+    color: #F49622;
+    padding-right: 0.2rem;
+}
+
+
+/*COLOR DE LA PARTE DONDE ESTA EL LOGO DEL APP*/
+
+#navbar-toggle {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#navbar-toggle h1 {
+    color: #F49622;
+    font-family: "Oswald", sans-serif;
+}
+#navbar-toggle a {
+    text-decoration: none;
+}
+.fa-bars {
+    color: aliceblue;
+}
+.nav-section {
+    /* height: 200px; */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* AQUI TERMINA EL NAVBAR */
+
+/* Aquí inicia el responsive */
+@media only screen and (max-width: 1215px) {
+    
+    #Slogan{
+        display: none;
+    }
+    #navbar{
+        height: auto;
+        padding: 5px 0;
+    }
+}
