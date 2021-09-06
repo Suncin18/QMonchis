@@ -424,9 +424,34 @@ footer a {
 /* Aquí inicia el responsive */
 
 @media only screen and (min-width: 386px) and (max-width: 1020px) {
-    #btn_inicio_sesion {
-        position: static;
+    .header_principal {
+        /* background-image: url(../IMG/fondo_inicial_completo.jpg);
+        background-size: cover;
+        width: 100%; */
+        height: 100vh;
+        background-size:auto;
     }
+    #sct_header_inferior img {
+        width: 50%;
+        margin-left: 25%;
+        height: fit-content;
+        width: 375px;
+        margin-left: 15px;
+    }
+    #btn_inicio_sesion {
+        margin-top: 60px;
+    }
+    #btn_inicio_sesion a {
+        font-size: 45px;
+        margin: auto;
+    }
+    #img_mejores_restaurantes{
+        margin-top: 50%;
+    }
+    #sct_header_inferior {
+        margin-top: -42%;
+    }
+
     /* RESERVAS */
     /* RESERVAS HEADER */
     #sct-reservas-header .header_reservas {
@@ -538,12 +563,32 @@ footer a {
 /* ULTRA PEQUEÑO RESPONSIVE */
 
 @media only screen and (max-width: 386px) {
+    .header_principal {
+        /* background-image: url(../IMG/fondo_inicial_completo.jpg);
+        background-size: cover;
+        width: 100%; */
+        height: 100vh;
+        background-size:auto;
+    }
+    #sct_header_inferior img {
+        /* width: 50%;
+        margin-left: 25% */
+        height: fit-content;
+        width: 245px;
+        margin-left: 15px;
+    }
+    #img_mejores_restaurantes{
+        margin-top: 50%;
+    }
     #btn_inicio_sesion {
         position: static;
+        margin-top: 45px;
     }
     #btn_inicio_sesion a {
-        font-size: 10px;
+        font-size: 30px;
+        margin: auto;
     }
+
     /* RESERVAS */
     /* RESERVAS HEADER */
     #sct-reservas-header .header_reservas {
@@ -554,7 +599,8 @@ footer a {
         width: 250px;
     }
     .texto_variedad_comidas {
-        width: 95%;
+        width: 100%;
+        margin-left: 0;
     }
     .variedad_p_1 {
         display: none;
